@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive BOGO Offer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>YAY! It’s BOGO</h1>
+    </header>
+
+    <form id="product-form">
+    
+      <div class="unit-option" data-units="1">
+        <input type="radio" name="unit-option" id="unit-1" checked>
+        <label for="unit-1">
+          <span>1 Unit</span>
+          <span class="discount">10% Off</span>
+          <span class="price">$10.00 USD</span>
+          <span class="old-price">$24.00 USD</span>
+        </label>
+        <div class="unit-options-hidden">
+          <div class="select-box">
+            <label for="size-1">Size</label>
+            <select id="size-1">
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <label for="color-1">Colour</label>
+            <select id="color-1">
+              <option>Black</option>
+              <option>White</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+ 
+      <div class="unit-option most-popular" data-units="2">
+        <input type="radio" name="unit-option" id="unit-2">
+        <label for="unit-2">
+          <span>2 Unit</span>
+          <span class="discount">20% Off</span>
+          <span class="most-popular-tag">MOST POPULAR</span>
+          <span class="price">$18.00 USD</span>
+          <span class="old-price">$24.00 USD</span>
+        </label>
+
+        <div class="unit-options-hidden">
+          <div class="select-box">
+            <label for="size-2a">Size #1</label>
+            <select id="size-2a">
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <label for="color-2a">Colour#1</label>
+            <select id="color-2a">
+              <option>Black</option>
+              <option>White</option>
+            </select>
+          </div>
+
+          <div class="select-box">
+            <label for="size-2b">Size #2</label>
+            <select id="size-2b">
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <label for="color-2b">Colour #2</label>
+            <select id="color-2b">
+              <option>Black</option>
+              <option>White</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="unit-option" data-units="3">
+        <input type="radio" name="unit-option" id="unit-3">
+        <label for="unit-3">
+          <span>3 Unit</span>
+          <span class="discount">30% Off</span>
+          <span class="price">$24.00 USD</span>
+          <span class="old-price">$24.00 USD</span>
+        </label>
+
+        <div class="unit-options-hidden">
+          <div class="select-box">
+            <label for="size-3">Size</label>
+            <select id="size-3">
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <label for="color-3">Colour</label>
+            <select id="color-3">
+              <option>Black</option>
+              <option>White</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: center; justify-content: space-between; width: 460px;">
+        <p style="color: #FF6B82;">Free Delivery</p>
+        <p>Total: <span id="total-price" style="font-weight: bold;">$18.00 USD</span></p>
+    </div>
+        <button type="button" id="add-to-cart" style="background-color:#FF6B82;border: none; padding: 10px ;width: 342px; height: 40px; margin-left: 50px; font-size: 20px;">+ Add to Cart</button>
+
+     
+    </form>
+
+
+
+
+    <div id="cart-message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

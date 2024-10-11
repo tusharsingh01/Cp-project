@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  header h1 {
+    text-align: center;
+    color: #FF6B82;
+    margin-bottom: 20px;
+  }
+  
+  .unit-option {
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .unit-option input[type="radio"] {
+    display: none;
+  }
+  
+  .unit-option label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .unit-option label span {
+    display: block;
+  }
+  
+  .discount {
+    background-color: #FF6B82;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .most-popular-tag {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #FF6B82;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 8px;
+  }
+  
+  .unit-options-hidden {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  .select-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .unit-option.most-popular:hover,
+  .unit-option:hover {
+    border-color: #FF6B82;
+  }
+  
+  footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer button {
+    background-color:#FF6B82;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  footer button:hover {
+    background-color: #FF6B82;
+  }
+  
+  @media (max-width: 600px) {
+    .select-box {
+      flex-direction: column;
+    }
+  }
+  
+  #cart-message {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+  }
+  
